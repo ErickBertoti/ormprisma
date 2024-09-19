@@ -29,3 +29,11 @@ model Modules {
 
   @@map("modules")
 }
+
+model Cliente {
+    id Int @id @default(autoincrement())
+    name String
+    lastName  String
+    cpf String @unique
+    address String
+}
